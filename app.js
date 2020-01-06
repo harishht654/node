@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var config = require('./config/config');
 var routers = require('./routes');
-//var db = require('./config/dbconnect');
+var db = require('./config/dbconnect');
 
 
 app.use(express.urlencoded({extended:true}))
